@@ -1,0 +1,28 @@
+{
+  "name": "wxnacy-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wxnacy/wxnacy-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wxnacy/wxnacy-nodejs/issues"
+  },
+  "homepage": "https://github.com/wxnacy/wxnacy-nodejs#readme",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-cors": "^0.0.16",
+    "koa-router": "^7.3.0",
+    "mysql": "^2.15.0",
+    "q": "^1.5.1",
+    "uglify-js": "^3.2.2"
+  }
+}
