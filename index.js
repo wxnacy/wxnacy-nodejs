@@ -25,13 +25,21 @@ router.get('test','/test',(ctx,next) => {
         bodys: ctx.request.body
     }
 });
+router.get('index','/',(ctx,next) => {
+    ctx.response.header['Content-Type']= 'application/json;charset=utf8';
+    // ctx.response.body = ctx.request.query;
+    ctx.response.body = {
+        query: ctx.request.query,
+        bodys: ctx.request.body
+    }
+});
 
 app
     .use(kbp())
     .use(cors())
     .use(router.routes())
     .use(router.allowedMethods());
-app.listen(3333,() => {
-    console.log('listen to 0.0.0.0:3333');
+app.listen(5000,() => {
+    console.log('listen to 0.0.0.0:5000');
 });
 
