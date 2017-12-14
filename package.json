@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/wxnacy/wxnacy-nodejs#readme",
   "dependencies": {
+    "express": "^4.16.2",
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
     "koa-cors": "^0.0.16",
