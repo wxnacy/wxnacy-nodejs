@@ -25,7 +25,7 @@ router.get('test','/test',(ctx,next) => {
         bodys: ctx.request.body
     }
 });
-router.get('index','/',(ctx,next) => {
+router.get('index','/api',(ctx,next) => {
     ctx.response.header['Content-Type']= 'application/json;charset=utf8';
     // ctx.response.body = ctx.request.query;
     ctx.response.body = {
